@@ -591,7 +591,7 @@ function __construct($Options=null,$VarPrefix='',$FctPrefix='') {
 	} 
 
 	// Set options
-	$this->VarRef =& $GLOBALS;
+	$this->VarRef = $GLOBALS;
 	if (is_array($Options)) $this->SetOption($Options);
 
 	// Links to global variables (cannot be converted to static yet because of compatibility)
